@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>24 Spokes in a Circular Div</title>
+<style>
+    .container {
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: relative;
+    }
+    .spoke {
+        position: absolute;
+        width: 2px;
+        height: 150px; /* Adjust as needed */
+        background-color: black;
+        top: 50%;
+        left: 50%;
+        transform-origin: top;
+    }
+    .spoke:nth-child(1) {
+        transform: rotate(0deg);
+    }
+    .spoke:nth-child(2) {
+        transform: rotate(15deg);
+    }
+    .spoke:nth-child(3) {
+        transform: rotate(30deg);
+    }
+    .spoke:nth-child(4) {
+        transform: rotate(45deg);
+    }
+    /* Add rules for other spokes similarly */
+    /* Total of 24 spokes, rotating every 15 degrees */
+</style>
+</head>
+<body>
+<div class="container">
+    <!-- Spokes -->
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <!-- Add 12 more divs for the remaining spokes -->
+</div>
+</body>
+</html>
